@@ -1,12 +1,12 @@
-"use client";
+'use client'
+import { RegisterInput } from "@/lib/data";
 import React, { useState } from "react";
-import { LoginInput } from "@/lib/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons";
-import GoogleLoginBtn from "./GoogleLoginBtn";
+import GoogleRegistrationBtn from "./GoogleRegistrationBtn";
 import SeparatingLine from "../common/SeparatingLine";
 
-function LoginForm() {
+function RegistrationForm() {
   const [showPassword, setShowPassword] = useState(false);
 
   const toggleVisibility = (e) => {
@@ -16,7 +16,7 @@ function LoginForm() {
 
   return (
     <form className="w-10/12 md:w-4/12 lg:w-3/12 flex flex-col gap-6 relative">
-      {LoginInput.map((input) => (
+      {RegisterInput.map((input) => (
         <div className="relative" key={input.id}>
           <input
             className="w-full border-2 border-gray-200 hover:border-gray-500 duration-500 p-2 rounded"
@@ -52,12 +52,12 @@ function LoginForm() {
       ))}
 
       <button className="w-full bg-slate-900 rounded text-white hover:bg-slate-800 duration-500  p-2">
-        Sign in
+        Sign Up
       </button>
       <SeparatingLine />
-      <GoogleLoginBtn />
+      <GoogleRegistrationBtn />
     </form>
   );
 }
 
-export default LoginForm;
+export default RegistrationForm;

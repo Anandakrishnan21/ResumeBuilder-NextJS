@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
-import LoginBtn from "../HomePage/LoginBtn";
+import LoginBtn from "./LoginBtn";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
