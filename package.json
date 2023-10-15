@@ -9,14 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^1.0.6",
     "@react-pdf/renderer": "^3.1.13",
+    "font-awesome-icons": "^1.6.0",
     "framer-motion": "^10.16.4",
     "lottie-react": "^2.4.0",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-to-pdf": "^1.0.1"
+    "react-to-pdf": "^1.0.1",
+    "tw-elements": "^1.0.0",
+    "tw-elements-react": "^1.0.0-alpha1"
   },
   "devDependencies": {
     "autoprefixer": "^10",
