@@ -14,6 +14,9 @@ module.exports = {
       },
       fontFamily:{
         custom: ['Noto Sans JP', 'sans-serif'],
+      },
+      boxShadow:{
+        custom: '0 0 10px rgba(0, 0, 0, 0.18)'
       }
     },
   },

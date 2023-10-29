@@ -4,6 +4,7 @@ import { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
 import LoginBtn from "./LoginBtn";
+import Link from "next/link";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +54,9 @@ function Header() {
         <div className="hidden md:block">
           <ul className="flex items-center space-x-10">
             <li>Create Resume</li>
-            <li>Resume Template</li>
+            <Link href="/template">
+              <li>Resume Template</li>
+            </Link>
             <li>
               <LoginBtn />
             </li>

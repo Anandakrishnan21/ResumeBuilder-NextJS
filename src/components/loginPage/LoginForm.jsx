@@ -51,8 +51,8 @@ function LoginForm() {
         </div>
       ))}
 
-      <button className="w-full bg-slate-900 rounded text-white hover:bg-slate-800 duration-500  p-2">
-        Sign in
+      <button className="w-full bg-slate-900 rounded text-white hover:bg-slate-800 duration-500 p-2">
+        Sign In
       </button>
       <SeparatingLine />
       <GoogleLoginBtn />
